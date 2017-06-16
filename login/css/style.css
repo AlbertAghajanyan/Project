@@ -1,0 +1,242 @@
+/*
+body {
+	background-color:#999;
+}
+
+.global {
+    width:100%;
+}
+#list>li>a:hover {
+	background-color:lightblue;
+}
+#list>li>a:focus {
+	background-color:lightblue;
+}
+
+.btn {
+    display: inline;
+    float: right;
+    width: 8%;
+    margin-top: 0.5%;
+    margin-right: 5%;
+}
+
+.btnLog {
+    display: inline;
+    float: right;
+    width: 20%;
+    margin-top: 0.5%;
+    margin-right:0;
+}
+
+.topMenu {
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px #DFE3EE;
+    background-color:white;
+}
+
+.logo {
+    padding-bottom: 22%;
+    float:left;
+    margin-top: 0%;
+    margin-left:30%;
+    width:50%;
+    background-image: url("../images/trainingLogo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.copyright {
+    text-align: center;
+}
+
+.footer {
+    background-color: lightblue;
+    text-align: center;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+*/
+
+body{
+    min-width:100px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: white;
+
+}
+.global {
+    width:100%;
+}
+.btn {
+    float: right;
+    background-color: rgb(215, 221, 200);
+    color: #000;
+    width: 40%;
+    margin-top: 0.5%;
+    margin-right: 10%;
+}
+.btn:hover {
+    color: #000000;
+    background-color: rgb(215, 221, 200);
+}
+.btn:focus{
+    background-color: rgb(215, 221, 200);
+    color: #000000;
+}
+#nav {
+    display:none;
+}
+.topMenu {
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #DFE3EE;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right,rgb(242, 148, 146), rgb(17, 67, 87) ) repeat scroll 0% 0%;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+}
+
+.logo {
+    margin-top: 0;
+    width:15%;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.footer {
+    padding: 1%;
+    text-align: center;
+}
+
+
+.btnLog {
+    display: inline;
+    float: right;
+    width: 20%;
+    margin-top: 0.5%;
+    margin-right:0;
+}
+
+.label {
+	margin-top:5%;
+	margin-left: 50%;
+	display: inline;
+}
+
+.input {
+	display:block;
+}
+
+.text {
+	margin-bottom:-2%;
+}
+
+.login {
+	padding:2%;
+    box-shadow: 2px 2px 2px 2px rgb(17,67,87);
+	width: 30%;
+	margin-top: 15%;
+	margin-bottom: 25%;
+	margin-left:37%;
+}
+
+.nav-bar {
+    width: 100%;
+}
+.nav-container {
+    overflow: hidden;
+}
+.nav-menu {
+    display: none;
+}
+nav.nav-bar ul {
+    list-style: none;
+}
+.nav-list {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+.nav-list li {
+    float: left;
+    width:25%;
+}
+.nav-list li a {
+    display: block;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+}
+.nav-list li a:hover {
+    -webkit-filter: brightness(1.3);
+    padding-top: 20px ;
+}
+
+@media screen and (max-width: 750px) {
+
+    .nav-menu {
+        color: #fff;
+        float: left;
+        display: block;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        float: left;
+        width: 100%;
+        height: 0;
+    }
+
+    .nav-list li {
+        width: 100%
+    }
+
+    .nav-list li a {
+        text-align: left;
+    }
+
+    .nav-list li a:hover {
+        padding-left: 20%;
+        padding-top: 10px;
+    }
+    #nav{
+        display:none;
+    }
+    .loginGlobal {
+        width: 270%;
+    }
+
+    .label {
+	    margin-top:5%;
+	    margin-left: 5%;
+	    display: inline;
+    }
+    .login {
+	    padding:2%;
+        box-shadow: 2px 2px 2px 2px rgb(17,67,87);
+	    width: 30%;
+	    margin-top: 15%;
+	    margin-bottom: 25%;
+	    margin-left:5%;
+    }
+}
+.logText {
+    text-align:center;
+    margin-bottom: 5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav-menu').click(function(){
+                    $('#nav').toggle(500);
+                });
+            });
+        </script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<div class="containar global">
+            <div class="row topMenu">
+                <div>
+                    <nav class="nav-bar">
+                        <div class="nav-container" id="ddd">
+                            <a id="nav-menu" class="nav-menu">&#9776; Menu</a>
+                            <ul class="nav-list ">
+                                <li> <a href="#"><img src="images/instigate_logo.png" class="logo"></a></li>
+                                <li> <a href="#"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS</a></li>
+                                <li> <a href="#"><i class="icon ion-ios7-camera-outline"></i>  CAMERAS</a></li>
+                                <li> <button type="button" class="btn btn-primary">Log in</button> </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <ul id="nav">
+                    <li> <a href="#"><i class="icon ion-ios7-home-outline"></i> Home</a></li>
+                    <li> <a href="#"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS</a></li>
+                    <li> <a href="#"><i class="icon ion-ios7-camera-outline"></i>  CAMERAS</a></li>
+                    <li> <a href="#"><i class="icon ion-ios7-login-outline"></i> Log in</a></li>
+                </ul>
+
+            </div>
+            <!--
+			<div class="row topMenu">
+				<div class="col-sm-2">
+					<a href="#" class="logo"></a>
+				</div>
+				<div class="col-sm-10 topMenuList">
+					<nav class="list sidebar dropdown sidebar">
+						<ul class="nav navbar-nav" id="list">
+                            <li><a href="#"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS </a></li>
+                            <li><a href="#"><i class="icon ion-ios7-camera-outline"></i> CAMERAS </a></li>
+						</ul>
+					</nav>
+					<button type="button" class="btn btn-primary">Login</button>
+				</div>
+			</div>
+            -->
+			<div class="loginGlobal">
+			<div class="login">
+			
+			<form>
+                <p><h3 class="logText">LOGIN</h3></p>
+				<p class="text">Username</p>
+				<label class="label">
+				<div class="input-group input">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					<input id="email" type="text" class="form-control" name="email" placeholder="Enter username">
+				</div>
+				</label>
+				
+				<p class="text">Password</p>
+				<label class="label">
+				<div class="input-group input">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+				    <input id="password" type="password" class="form-control" name="password" placeholder="Enter password">
+				</div>
+				</label>
+			</form>
+			<label><input type="checkbox" name="remember"> Remember me</label>
+			<button type="submit" class="btn btn-default btnLog">LogIn</button>
+
+			</div>
+			</div>
+			<div class="row topMenu footer">
+				<span class="copyright">&copy; 2017 Instigate Training Center</span>
+			</div>
+		 </div>
+	</body>
+</html>
