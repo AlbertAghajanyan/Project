@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+
+    <script>
+        $(document).ready(function(){
+            $('#nav-menu').click(function(){
+                $('#nav').toggle(1000);
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+
+
+</head>
+
+<body>
+<div class="containar global">
+
+    <div class="topMenu">
+        <div>
+            <nav class="nav-bar">
+                <div class="nav-container" id="ddd">
+                    <a id="nav-menu" class="nav-menu">&#9776; Menu</a>
+                    <ul class="nav-list ">
+                        <li> <a href="#"><img src="images/home.svg" class="logo"></a></li>
+                        <li> <a href="resurces/detected_objects.html"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS</a></li>
+                        <li> <a href="resurces/cameras.html"><i class="icon ion-ios7-camera-outline"></i>  CAMERAS</a></li>
+                        <li> <a href="resurces/login.html"><i class="icon glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;Log In</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="nav" class="hidden-sm hidden-md hidden-lg">
+            <li> <a href="#"><i class="icon ion-ios7-home-outline"></i> Home</a></li>
+            <li> <a href="#"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS</a></li>
+            <li> <a href="resurces/cameras.html"><i class="icon ion-ios7-camera-outline"></i>  CAMERAS</a></li>
+            <li> <a href="#"><i class="icon ion-ios7-login-outline"></i> Log in</a></li>
+        </ul>
+
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner slide">
+            <div class="item active">
+            </div>
+
+            <div class="item">
+            </div>
+
+            <div class="item">
+            </div>
+        </div>
+
+    </div>
+    <div class=" topMenu footer">
+        <span class="copyright">&copy; 2017 Instigate Training Center </span>
+    </div>
+</div>
+
+</body>
+</html>

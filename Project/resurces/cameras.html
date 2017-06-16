@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/cameras.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+            $('#nav-menu').click(function(){
+                $('#nav').toggle(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="contain">
+    <div class="topMenu">
+        <div>
+            <nav class="nav-bar">
+                <div class="nav-container" id="ddd">
+                    <a id="nav-menu" class="nav-menu">&#9776; Menu</a>
+                    <ul class="nav-list ">
+                        <li> <a href="../index.html"><img src="../images/home.svg" class="logo"></a></li>
+                        <li> <a href="../resurces/detected_objects.html"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS</a></li>
+                        <li> <a href="#"><i class="icon ion-ios7-camera-outline"></i>  CAMERAS</a></li>
+                        <li> <a href="../resurces/login.html"><i class="icon glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;Log In</a></li>
+                        <!--li> <button type="button" class="btn btn-default">Log in</button> </li-->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="nav" class="hidden-sm hidden-md hidden-lg">
+            <li> <a href="#"><i class="icon ion-ios7-home-outline"></i> Home</a></li>
+            <li> <a href="#"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS</a></li>
+            <li> <a href="#"><i class="icon ion-ios7-camera-outline"></i>  CAMERAS</a></li>
+            <li> <a href="#"><i class="icon ion-ios7-login-outline"></i> Log in</a></li>
+        </ul>
+
+    </div>
+
+    <div class="row cameras">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 camera-info">
+            <div class="cam-foto">
+            </div>
+            <span class="info" style="margin: 2% 0  0 ;"><b>Camera 1</b></span>
+            <span class="info">Location</span>
+            <span class="info">Online/Offline</span>
+        </div>
+    </div>
+    <div class=" topMenu footer">
+        <span class="copyright">&copy; 2017 Instigate Training Center </span>
+    </div>
+</div>
+</body>
+</html>

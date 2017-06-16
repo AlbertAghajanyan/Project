@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detected objects</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/detected_objects.css">
+    <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+
+    <script>
+        $(document).ready(function(){
+            $('#nav-menu').click(function(){
+                $('#nav').toggle(500);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="contain">
+
+        <div class="topMenu">
+            <div>
+                <nav class="nav-bar">
+                    <div class="nav-container" id="ddd">
+                        <a id="nav-menu" class="nav-menu">&#9776; Menu</a>
+                        <ul class="nav-list ">
+                            <li> <a href="../index.html"><img src="../images/home.svg" class="logo"></a></li>
+                            <li> <a href="#"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS</a></li>
+                            <li> <a href="../resurces/cameras.html"><i class="icon ion-ios7-camera-outline"></i>  CAMERAS</a></li>
+                            <li> <a href="../resurces/login.html"><i class="icon glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;Log In</a></li>
+                            <!--li> <button type="button" class="btn btn-default">Log in</button> </li-->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <ul id="nav" class="hidden-sm hidden-md hidden-lg">
+                <li> <a href="#"><i class="icon ion-ios7-home-outline"></i> Home</a></li>
+                <li> <a href="#"><i class="icon ion-ios7-person-outline"></i> DETECTED OBJECTS</a></li>
+                <li> <a href="#"><i class="icon ion-ios7-camera-outline"></i>  CAMERAS</a></li>
+                <li> <a href="#"><i class="icon ion-ios7-login-outline"></i> Log in</a></li>
+            </ul>
+
+        </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 search-col">
+                    <div class="dropdown">
+                        <input class="search-input" type="text" placeholder="Search by date">
+                        <button class="search-button btn dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><input name="date" type="date"></li>
+                            <li><input name="time" type="time">
+                                <input name="t" type="time"></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <input class="search-input" type="text" placeholder="Search by camera">
+                        <button class="search-button btn dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Camera1</a>
+                            <li><a href="#">Camera2</a>
+                            <li><a href="#">Camera3</a>
+                            <li><a href="#">Camera4</a>
+                            <li><a href="#">Camera5</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="detected-list col-md-9 col-sm-9 col-xs-12">
+                    <div class="detected-object row">
+                        <img class="col-md-3 col-xs-3 col-sm-3" src="../images/ficsed.JPG">
+                        <div class="col-xs-9 col-sm-9 col-md-9 ficsed-data">
+                            <p class="ficsed-date"><b>Fri, 09 Sep 2005 13:51:39</p>
+                            <p class="ficsed-camera"><b>Camera 1</p>
+                        </div>
+                        <!--<div class="col-md-3 col-xs-3 col-sm-3">
+                            <button class="btn glyphicon glyphicon-edit col-md-3 col-xs-3 col-sm-3 col-md-offset-1 col-xs-offset-1 col-sm-offset-1"> </button>
+                            <button class="btn glyphicon glyphicon-remove-circle col-md-3 col-xs-3 col-sm-3 col-md-offset-1 col-xs-offset-1 col-sm-offset-1"> </button>
+                            <button type="button" class="btn glyphicon glyphicon-paperclip col-md-3 col-xs-3 col-sm-3 col-md-offset-1 col-xs-offset-1 col-sm-offset-1"> </button>
+                        </div>-->
+                    </div>
+                     <div class="detected-object row">
+                        <img class="col-md-3 col-xs-3 col-sm-3" src="../images/ficsed.JPG">
+                        <div class="col-xs-9 col-sm-9 col-md-9">
+                            <p class="ficsed-date"><b>Fri, 09 Sep 2005 13:51:39</p>
+                            <p class="ficsed-camera"><b>Camera 1</p>
+                        </div>
+                        <!--<div class="col-md-3 col-xs-3 col-sm-3">
+                            <button class="btn glyphicon glyphicon-edit col-md-3 col-xs-3 col-sm-3 col-md-offset-1 col-xs-offset-1 col-sm-offset-1"> </button>
+                            <button class="btn glyphicon glyphicon-remove-circle col-md-3 col-xs-3 col-sm-3 col-md-offset-1 col-xs-offset-1 col-sm-offset-1"> </button>
+                            <button type="button" class="btn glyphicon glyphicon-paperclip col-md-3 col-xs-3 col-sm-3 col-md-offset-1 col-xs-offset-1 col-sm-offset-1"> </button>
+                        </div>-->
+                    </div>
+
+                </div>
+            </div>
+            <div class="row topMenu footer">
+                <span class="copyright">&copy; 2017 Instigate Training Center</span>
+            </div>
+
+    </div>
+
+</body>
+
+<html>

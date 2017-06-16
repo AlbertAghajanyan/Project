@@ -1,0 +1,25 @@
+.carousel-indicators .active {
+    background-color: rgba(74, 31, 31, 0.33);
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators li{
+    width: 12px;
+    height: 12px;
+    border: solid 1px #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.28);
+}
+.item {
+    margin:auto;
+    margin-top:2%;
+    margin-bottom:2%;
+    padding: 20%;
+    background-image: url("../images/camera.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10%;
+}
+
