@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Home</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+        <script src="js/mobile-menu.js" defer></script>
+        <script src="js/app.js" defer></script>
+        <script src="js/detected-objects.js" defer></script>
+        <script src="js/cameras-data.js" defer></script>
+        <script src="js/login.js" defer></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cameras.css">
+        <link rel="stylesheet" href="css/detected_objects.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/login.css">
+
+    </head>
+    <body ng-app="my-app">
+
+            <div ng-include="'resources/header.html'" ng-controller="head"></div>
+            <div ng-view></div>
+            <div ng-include="'resources/footer.html'"></div>
+
+    </body>
+</html>

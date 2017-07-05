@@ -1,0 +1,24 @@
+<header>
+    <div class="topMenu header">
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <i id="nav-menu" class="nav-menu hidden-sm hidden-md hidden-lg" ng-click="myFoo()" ng-model="name">
+                    <i class="icon glyphicon glyphicon-list"></i>&nbsp;&nbsp;Menu {{name}}
+                </i>
+                <ul class="nav-list hidden-xs">
+                    <li id="home" class="active"> <a href="#/!"><i class="icon glyphicon glyphicon-home"></i>&nbsp;&nbsp;HOME</a></li>
+                    <li id="detected"> <a href="#!objects"><i class="icon glyphicon glyphicon-user"></i>&nbsp;&nbsp;DETECTED OBJECTS</a></li>
+                    <li id="cameras"> <a href="#!cameras"><i class="icon glyphicon glyphicon-camera"></i>&nbsp;&nbsp;CAMERAS</a></li>
+                    <li id="login"> <a href="#!login" id="log"><i class="icon glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;Log In</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul id="nav" ng-show="showMe">
+            <li id="mobile_home"> <a href="#/!"><i class="icon glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
+            <li id="mobile_detected"> <a href="#!objects"><i class="icon glyphicon glyphicon-user"></i>&nbsp;&nbsp;DETECTED OBJECTS</a></li>
+            <li id="mobile_cameras"> <a  href="#!cameras"><i class="icon glyphicon glyphicon-camera"></i>&nbsp;&nbsp;CAMERAS</a></li>
+            <li id="mobile_login"> <a  href="#!login"><i class="icon glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;Log In</a></li>
+        </ul>
+    </div>
+</header>

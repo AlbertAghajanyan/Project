@@ -1,0 +1,58 @@
+.carousel-indicators .active {
+    background-color: rgba(74, 31, 31, 0.33);
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators li{
+    width: 12px;
+    height: 12px;
+    border: solid 1px #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.28);
+}
+.item {
+    margin:auto;
+    margin-top:2%;
+    margin-bottom:2%;
+    padding: 20%;
+}
+
+#item-1 {
+    background: url("../images/camera.jpg") center  no-repeat;
+    background-size: contain;
+}
+#item-2 {
+    background: url("../images/camera1.jpg") center  no-repeat;
+    background-size: contain;
+ /*   -webkit-animation-name: example;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;*/
+}
+#item-3 {
+    background: url("../images/camera2.jpg") center  no-repeat;
+    background-size: contain;
+}
+/*@-webkit-keyframes example {
+    0%   {transform:skewY(50deg);}
+    20%  {transform:skewX(50deg);}
+    40% {transform:skewY(-50deg);}
+    60% {transform:skewX(-50deg);}
+    80% {transform:skewY(50deg);}
+    100% {transform:skewX(50deg);}
+}
+
+/* Standard syntax
+@keyframes example {
+    0%   {transform:skewY(50deg);}
+    20%  {transform:skewX(50deg);}
+    40% {transform:skewY(-50deg);}
+    60% {transform:skewX(-50deg);}
+    80% {transform:skewY(50deg);}
+    100% {transform:skewX(50deg);}
+} */
+
+

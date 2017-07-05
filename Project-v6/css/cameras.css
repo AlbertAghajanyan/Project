@@ -1,0 +1,189 @@
+.cont {
+    background-image: url("../images/camera-lens.jpg");
+    margin-left: 0;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow:hidden;
+    min-height:100vh;
+}
+
+.notFound {
+    display:none;
+    color: red;
+    font-size: 2em;
+    text-align: center;
+}
+
+.camera-info {
+    margin-top:2%;
+    margin-bottom:1%;
+    background-color: rgba(230, 231, 255, 0.66);
+    font-size: 1.2em;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+/*TODO typo in wrod foto :)*/
+
+.cam-foto {
+    background-image: url("../images/cam.svg");
+    margin-left: 11px;
+    padding: 8%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    width: 30%;
+    opacity:1;
+}
+
+.cam-foto:hover {
+    opacity:0.6;
+}
+
+.info {
+    float:left;
+    width: 47%;
+}
+
+.info-field {
+    margin-bottom: 3%;
+    margin-top:3%;
+}
+
+.icons {
+    width:19%;
+    display: none;
+    margin-top: 2%;
+}
+
+
+.icons>button {
+    background-color: rgba(230, 231, 255, 0.66);
+}
+
+.icons>button:focus {
+    background-color: white;
+    outline:none;
+}
+
+.icons>button:active {
+    background-color: white;
+    outline: none;
+}
+
+#search {
+    margin-top: 20px;
+}
+
+#search_but {
+    background-color: rgba(230, 231, 255, 0.8);
+    border-radius: 0 4px 4px 0;
+    height: 35px;
+}
+
+#search_but, .drop:active {
+    outline: none;
+}
+
+#search_but, .drop:focus {
+    outline: none;
+}
+
+.drop {
+    height: 35px;
+    background-color: rgb(198, 197, 213);
+    border-radius:4px 0 0 4px;
+    font-size: 1.2em;
+}
+
+.input_area {
+    height:35px;
+    outline: none;
+    border:none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+#delEdit {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    opacity: 0.3;
+    display: none;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+
+}
+
+#editArea {
+    width: 30%;
+    min-height: 40vh;
+    background-color: rgba(230, 231, 255, 0.9);
+    margin-left: 30%;
+    margin-top: 25vh;
+    min-width: 200px;
+    opacity: 1;
+    display: none;
+    position: absolute;
+    top: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    box-shadow: 2px 2px 2px 2px rgb(6, 0, 0);
+}
+
+#editArea input {
+    width: 80%;
+    float: left;
+    display: inline-block;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+#editArea hr {
+    box-shadow: 1px 1px 1px 1px black;
+    width:80%;
+    margin-left: 10%;
+}
+
+#editArea button:focus {
+    outline: none;
+}
+
+#editSettings{
+    font-weight: bold;
+    opacity: 1;
+    font-size: 2em;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.nameLoc {
+    font-size: 1.2em;
+    float: left;
+    margin:0 0 10px 10%;
+    display: block;
+
+}
+
+#cancelBut {
+    margin:  10px 2% 20px 0;
+    float: right;
+    border: 1px solid silver;
+}
+
+#doneBut {
+    margin:  10px 10% 20px 0;
+    float: right;
+    border: 1px solid silver;
+}

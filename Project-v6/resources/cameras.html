@@ -1,0 +1,38 @@
+<div class="container cont" id = "cont">
+    <div class="row " id="search">
+        <div class="col-sm-8  col-sm-offset-2 col-xs-10 col-xs-offset-1">
+            <select ng-model="searchBy" class="col-sm-2 col-xs-3 drop">
+                <option value="$">{{selectData[0]}}</option>
+                <option value="camName">{{selectData[1]}}</option>
+                <option value="location">{{selectData[2]}}</option>
+            </select>
+            <input class="input_area col-sm-9 col-xs-8" placeholder="Search..." ng-model="searchData[searchBy]">
+            <button class="btn btn-default col-sm-1 col-xs-1" id="search_but" type="button" ng-click="search()"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
+    </div>
+
+    <div class="notFound" id="notFound"></div>
+    <div class=" cameras" id="cam-area" ng-repeat="cam in data | filter : searchData">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 camera-info" >
+            <div class="cam-foto">
+            </div>
+            <div class="info" >
+                <p class="info-field" style="margin: 2% 0  0 ;"><b> {{cam.camName}}</b></p>
+                <p class="info-field">{{cam.location}}</p>
+                <p class="info-field">{{cam.onOff}}</p>
+            </div>
+            <div class="icons">
+                <button class="btn glyphicon glyphicon-edit col-md-3 col-xs-3 col-sm-3 col-md-offset-1 col-xs-offset-1 col-sm-offset-1"
+                        title="Edit" id = "edit" >
+                </button>
+                <button class="btn glyphicon glyphicon-remove-circle col-md-3 col-xs-3 col-sm-3 col-md-offset-1 col-xs-offset-1
+                 col-sm-offset-1" title="Delete" id = "del" > </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="delEdit">
+</div>
+<div id="editArea">
+</div>
+<script src="js/cameras-data.js" defer></script>

@@ -1,0 +1,89 @@
+.global {
+    background-image: url("../images/logImg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow:hidden;
+}
+.myContainer {
+    background-image: url("../images/logImg1.jpg");
+}
+.login {
+    background-color: rgba(230, 231, 255, 0.66);
+    opacity: 1;
+    padding:3% 2% 2% 2%;
+    box-shadow: 2px 2px 2px 2px rgb(6, 0, 0);
+    width: 25%;
+    margin-top: 9%;
+    margin-bottom: 19%;
+    min-width:270px;
+    overflow: hidden;
+}
+
+.input {
+    border:solid 1px black;
+}
+
+.textUsernamePassword {
+    margin-bottom:-2%;
+}
+
+.logText {
+    text-align:center;
+    margin-bottom: 7%;
+    margin-top:-5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.loginLine {
+    margin-top:-2%;
+    box-shadow:1px 1px 1px 1px black;
+}
+.btnLog {
+    border:solid 1px black;
+    display: inline;
+    float: right;
+    width: 30%;
+    margin-top: 0.5%;
+    margin-right:0;
+}
+
+#btnLogId:hover, #btnLogId:active {
+    color: black;
+    background-color: rgb(211, 212, 236);
+    border:solid 1px black
+}
+
+
+.blink {
+    -webkit-animation: blink 3s linear infinite;
+    animation: blink 2s linear infinite;
+    font-weight: bold;
+    color: #000000;
+}
+
+@-webkit-keyframes blink {
+    0% { color: #060000; }
+    50% { color: #ffffff; }
+    100% { color: #060000; }
+}
+
+@keyframes blink {
+    0% { color: #000000; }
+    50% { color: #ffffff; }
+    100% { color: #060000; }
+}
+.alert {
+    width: auto;
+    height:auto;
+    background-color: rgb(211, 212, 236);
+    display: none;
+    font-size: 14px;
+    margin-bottom:0;
+    /*position: absolute;
+    z-index: 100;
+    margin-top:-4%;
+    width: 84%;*/
+}

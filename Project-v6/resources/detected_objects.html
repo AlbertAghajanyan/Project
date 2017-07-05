@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="row" >
+        <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-sm-8 col-md-8 col-xs-8 search-col">
+            <div class="dropdown">
+
+                <input ng-model="searchByDate" class="search-input" type="text" placeholder="Search by date" id="date" onchange="searchByInterval()">
+                <button class="search-button dropdown-toggle" type="button" data-toggle="dropdown" onclick="searchByInterval()">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+
+            </div>
+
+            <div class="dropdown">
+                <input  ng-model="searchByCamera" class="search-input" type="text" placeholder="Search by camera"  id="searchByCamera" onchange="searchByCameraName()">
+                <button class="search-button dropdown-toggle" type="button" data-toggle="dropdown" onclick="searchByCameraName()">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+                    <!--<ul class="list dropdown-menu">
+
+                    </ul>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="row detected-container" ng-repeat="camera in ocw.cameras | filter : searchByCamera">
+            <div  class="detected-object col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-sm-8 col-md-8 col-xs-8" ng-repeat="image in camera.images | filter: searchByDate">
+                <img class="detected-image" src="{{image.imageName}}">
+                <div class="detected-data">
+                    <p><b>{{camera.cameraName}}</b></p>
+                    <p>{{image.imageDate}}</b></p>
+                </div>
+            </div>
+    </div>
+
+</div>
